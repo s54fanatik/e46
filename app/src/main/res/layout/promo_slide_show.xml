@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="10dp"
+    app:cardCornerRadius="4dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/hdMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Style Watch"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_centerHorizontal="true" />
+
+        <!--<TextView-->
+            <!--android:id="@+id/hdSub"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_below="@+id/hdMain"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_margin="20dp"-->
+            <!--android:gravity="center"-->
+            <!--android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
+            <!--android:text="Your wardrobe is calling for these trends"/>-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvItems"
+            android:layout_below="@+id/hdMain"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/tvShop"
+            android:padding="10dp"
+            android:scrollbars="horizontal"
+            android:elevation="30dp"
+            tools:listitem="@layout/slideshow_card_item"/>
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
